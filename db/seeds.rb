@@ -10,5 +10,12 @@ first_user = User.create(name: 'Tom', photo: 'https://unsplash.com/photos/F_-0Bx
 second_user = User.create(name: 'Lilly', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'Teacher from Poland.')
 
 first_post = Post.create(author: first_user, title: 'Hello', text: 'This is my first post')
+second_post = Post.create(author: first_user, title: 'Post 2', text: 'I post this to test
+')
+third_post = Post.create(author: second_user, title: 'Code work', text: 'If you see this 
+that means my code work')
+forth_post = Post.create(author: second_user, title: 'Post 3', text: 'work work')
 
 Comment.create(post: first_post, user: second_user, text: 'Hi Tom!' )
+Comment.create(post: first_post, user: first_user, text: 'Second comment!' )
+Comment.create(post: second_post, user: first_user, text: 'comment work!' )

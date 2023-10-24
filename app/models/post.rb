@@ -5,6 +5,10 @@ class Post < ApplicationRecord
 
   after_create :increment_user_posts_counter
 
+  validate :title, presence: true, length: { maximum: 250 }
+  validate :comments_counter, numericality: { only_integer: true, greater_than_or_equal_to: 0 }
+  validate :likes_conter, numericality: { only_integer: true, greater_than_or_equal_to: 0 }
+
   def increment_user_posts_counter
     author.update(posts_counter: author.posts.count)
   end

@@ -6,7 +6,7 @@ class UserTest < ActiveSupport::TestCase
     post1 = user.posts.create(title: 'Post 1', created_at: 2.days.ago, comments_counter: 1, likes_counter: 1)
     post2 = user.posts.create(title: 'Post 2', created_at: 1.day.ago, comments_counter: 1, likes_counter: 1)
     post3 = user.posts.create(title: 'Post 3', created_at: Time.current, comments_counter: 1, likes_counter: 1)
-    post4 = user.posts.create(title: 'Post 4', created_at: 3.days.ago, comments_counter: 1, likes_counter: 1)
+    user.posts.create(title: 'Post 4', created_at: 3.days.ago, comments_counter: 1, likes_counter: 1)
 
     recent_posts = user.recent_posts
 

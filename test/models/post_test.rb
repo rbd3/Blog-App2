@@ -33,8 +33,8 @@ class PostTest < ActiveSupport::TestCase
 
   test 'increment_user_posts_counter should update user posts_counter' do
     user = User.create(name: 'Jane', posts_counter: 0)
-    post = Post.create(author: user, title: 'Sample', comments_counter: 0, likes_counter: 0)
-    
+    Post.create(author: user, title: 'Sample', comments_counter: 0, likes_counter: 0)
+
     user.reload # Reload the user to get the updated posts_counter value
 
     assert_equal 1, user.posts_counter

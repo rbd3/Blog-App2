@@ -64,7 +64,7 @@ body {
 
 .post-container {
   display: flex;
-  width: 30%;
+  width: 50%;
   height: auto;
   border: solid 2px;
   margin-left: 1%;
@@ -77,10 +77,9 @@ body {
   font-weight: bold;
 }
 
-.post-bio {
+.post-bio-index {
   margin-top: 8%;
-  margin-left: -8.5%;
-  white-space: nowrap;
+  margin-left: -5%;
 }
 
 .post-totalpost {

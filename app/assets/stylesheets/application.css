@@ -83,7 +83,7 @@ body {
 }
 
 .post-totalpost {
-  position: fixed;
+  position: absolute;
   margin-top: 3%;
   margin-left: 37%;
 }

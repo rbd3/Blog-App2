@@ -1,2 +1,24 @@
-<h1>Here is post list</h1>
+<div class="post-details">
+    <h3 class="comment-title">
+      Post # <%= @index %>
+      by <%= @user.name %>
+    </h3>
 
+    <div class="counter-wrapper">
+      <p class="comment-count">Comments: <%= @post.comments.count %></p>
+      <p class="like-count">Likes: <%= @post.likes.count %></p>
+    </div>
+
+    <p class="post-comment-1"><%= @post.text %></p>
+  </div>
+
+  <div class = "all-comments">
+  <% if @post.comments.any? %>
+    <% @post.comments.each do |comment| %>
+      <p><%= comment.user.name %>:
+      <%= comment.text %></p>
+    <% end %>
+    <% else %>
+        <div class="no-comment">No comment</div>
+    <% end %>
+  </div>

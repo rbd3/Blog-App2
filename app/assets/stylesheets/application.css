@@ -18,7 +18,7 @@ body {
 }
 
 .flex-col {
-  width: 20%;
+  width: 46%;
   height: auto;
   border: solid 2px;
   margin-left: 5%;
@@ -34,7 +34,7 @@ body {
 }
 
 .user-totalpost {
-  margin-left: 30%;
+  margin-left: 69.5%;
 }
 
 .header-title {
@@ -43,7 +43,7 @@ body {
 }
 
 .user-card {
-  width: 30%;
+  width: 50%;
   height: auto;
   border: solid 2px;
   margin-left: 1%;
@@ -77,14 +77,15 @@ body {
   font-weight: bold;
 }
 
-.post-bio-index {
-  margin-top: 8%;
+.post-bio {
+  margin-top: 6%;
   margin-left: -5%;
 }
 
 .post-totalpost {
-  margin-top: 12%;
-  margin-left: 25%;
+    position:fixed;
+  margin-top: 3%;
+  margin-left: 37%;
 }
 
 .see-all-posts {
@@ -149,10 +150,6 @@ body {
   margin-top: -38%;
   margin-left: 240%;
   white-space: nowrap;
-}
-
-.recent-comments {
-  margin-left: 2%;
 }
 
 .all-comments {

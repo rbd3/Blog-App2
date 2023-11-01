@@ -1,1 +1,23 @@
-<h1>Here list of Users</h1>
+<%= render partial: "header", locals: { user: @user } %>
+
+<div class="gap-1">
+  <div class="user-card">
+    <span class="bio-title">Bio</span>
+    <span class="user-bio"><%= @user.bio %></span>
+  </div>
+</div>
+
+<div class="post-voloany">
+  <% if @recent_posts.any? %>
+    <% @recent_posts.each do |recent_post| %>
+      <%= render partial: "posts/post", locals: { post: recent_post } %>
+    <% end %>
+    <% else %>
+    <p class="no-post">No recent posts found for <%= @user.name %>.</p>
+  <% end %>
+</div>
+
+
+  <button class="see-all-posts" >
+  <%= link_to "See All Posts", user_posts_path(@user) %>
+  </button>

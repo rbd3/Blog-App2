@@ -13,3 +13,145 @@
  *= require_tree .
  *= require_self
  */
+body {
+  background-color: burlywood;
+}
+
+.flex-col {
+  width: 46%;
+  height: auto;
+  border: solid 2px;
+  margin-left: 5%;
+  margin-top: -1.5%;
+}
+
+.user-photo {
+  margin-left: 1%;
+}
+
+.container-header {
+  margin-bottom: 1%;
+}
+
+.user-totalpost {
+  margin-left: 69.5%;
+}
+
+.header-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.user-card {
+  width: 50%;
+  height: auto;
+  border: solid 2px;
+  margin-left: 1%;
+  padding-bottom: 1%;
+}
+
+.bio-title {
+  margin-bottom: 5%;
+  margin-left: 1%;
+  display: block;
+  font-weight: bold;
+}
+
+.user-bio {
+  margin-top: 5%;
+  margin-left: 1%;
+}
+
+.post-container {
+  display: flex;
+  width: 50%;
+  height: auto;
+  border: solid 2px;
+  margin-left: 1%;
+  margin-top: 1%;
+}
+
+.post-title {
+  margin-bottom: 5%;
+  margin-left: 1%;
+  font-weight: bold;
+}
+
+.post-bio {
+  margin-top: 6%;
+  margin-left: -5%;
+}
+
+.post-totalpost {
+  position: absolute;
+  margin-top: 3%;
+  margin-left: 37%;
+}
+
+.see-all-posts {
+  width: 10%;
+  font-size: 16px;
+  margin-top: 2%;
+  background-color: burlywood;
+  margin-left: 10%;
+}
+
+.no-post {
+  margin-left: 5%;
+  color: rgb(225, 22, 22);
+  font-size: 18px;
+}
+
+.no-comment {
+  margin-left: 5%;
+  color: rgb(225, 22, 22);
+  font-size: 18px;
+  margin-top: 1%;
+}
+
+.pagination {
+  width: 10%;
+  font-size: 16px;
+  margin-top: 2%;
+  background-color: burlywood;
+  margin-left: 10%;
+}
+
+.post-details {
+  display: flex;
+  width: 30%;
+  height: auto;
+  border: solid 2px;
+  margin-left: 1%;
+  margin-top: 1%;
+}
+
+.comment-totalpost {
+  margin-top: 12%;
+  margin-left: 25%;
+}
+
+.post-comment-1 {
+  margin-top: 15%;
+  margin-left: -48%;
+}
+
+.comment-title {
+  margin-left: 1%;
+}
+
+.comment-count {
+  margin-top: 25%;
+  margin-left: 120%;
+  white-space: nowrap;
+}
+
+.like-count {
+  margin-top: -38%;
+  margin-left: 240%;
+  white-space: nowrap;
+}
+
+.all-comments {
+  margin-left: 2%;
+}

@@ -1,2 +1,3 @@
-<h1>Welcome</h1>
-
+<% @users.each do |user| %>
+  <%= render partial: "header", locals: { user: user } %>
+<% end %>

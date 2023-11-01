@@ -1,5 +1,5 @@
 <div class="container">
-  <%= form_with model: @post, url: user_posts_path(@user), class: "form-1" do |form| %>
+  <%= form_with model: @post, class: "form-1" do |form| %>
     <%= form.label :title, "Title", class: "post-label" %>
     <%= form.text_field :title, class: "post-label-title" %>
     <%= form.label :text, "Post text", class: "post-label-text" %>

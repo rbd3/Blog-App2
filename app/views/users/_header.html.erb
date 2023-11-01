@@ -1,0 +1,11 @@
+<div class="container-header">
+<div>
+  <img src="<%= user.photo %>" class="user-photo">
+  <div class="user-card-info">
+    <div class="flex-col">
+      <span class="header-title"><%= link_to user.name, user_path(user) %></span>
+      <span class="user-totalpost">Number of posts: <%= user.posts_counter %></span>
+    </div>
+  </div>
+</div>
+</div>

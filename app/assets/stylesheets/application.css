@@ -155,3 +155,59 @@ body {
 .all-comments {
   margin-left: 2%;
 }
+
+/* Form */
+
+.textarea-comment {
+    display: flex;
+    width: 30%;
+    height: auto;
+    border: solid 2px;
+    margin-left: 1%;
+    margin-top: 1%;
+  }
+  
+  .submit-comment {
+    margin-left: 9%;
+    margin-top: 1%;
+    font-size: 16px;
+  }
+  
+  .form-1 {
+    width: 30%;
+    height: auto;
+    border: solid 2px;
+    margin-left: 1%;
+    margin-top: 1%;
+    justify-content: center;
+  }
+  
+  .post-label {
+    margin-left: 2%;
+  }
+  
+  .post-label-title {
+    width: 80%;
+    height: 5vh;
+    margin-left: 6%;
+    white-space: nowrap;
+  }
+  
+  .post-label-text {
+    margin-top: 2%;
+    margin-left: 2%;
+  }
+  
+  .post-label-area {
+    margin-top: 10%;
+    width: 80%;
+    height: 20vh;
+    margin-left: 15%;
+  }
+  
+  .submit-post {
+    margin-left: 35%;
+    margin-top: 5%;
+    font-size: 16px;
+  }
+  

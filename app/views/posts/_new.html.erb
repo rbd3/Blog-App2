@@ -1,0 +1,11 @@
+<div class="container">
+  <%= form_with model: @post, class: "form-1" do |form| %>
+    <%= form.label :title, "Title", class: "post-label" %>
+    <%= form.text_field :title, class: "post-label-title" %>
+    <%= form.label :text, "Post text", class: "post-label-text" %>
+    <%= form.text_area :text, size: "70x5", class: "post-label-area" %>
+    <div class="submit-post">
+      <%= form.submit "Add new post" %>
+    </div>
+  <% end %>
+</div>

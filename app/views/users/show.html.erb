@@ -17,6 +17,7 @@
   <% end %>
 </div>
 
+<%= render partial: 'posts/new', locals: { post: @post } %>
 
   <button class="see-all-posts" >
   <%= link_to "See All Posts", user_posts_path(@user) %>

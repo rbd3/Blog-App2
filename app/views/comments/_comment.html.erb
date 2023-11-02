@@ -1,0 +1,7 @@
+<div class="form-wrapper">
+  <%= form_with(model: [@post, @post.comments.build]) do |f| %>
+    <%= f.hidden_field :authenticity_token, value: form_authenticity_token %>
+    <%= f.text_area :text, class: "textarea-comment", placeholder: "Write your comment here", rows: 10 %>
+    <%= f.submit "Submit Comment", class: "submit-comment" %>
+  <% end %>
+</div>

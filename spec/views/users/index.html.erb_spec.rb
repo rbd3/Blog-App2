@@ -14,11 +14,10 @@ RSpec.feature 'User Index Page', type: :feature do
       expect(page).to have_content("Number of posts: #{user1.posts.count}")
       expect(page).to have_content('Number of posts: 0') # User2 has no posts
     end
-=begin
+
     scenario 'Clicking on a User Redirects to Their Show Page' do
       visit users_path
       click_link user1.name
       expect(current_path).to eq(user_path(user1))
     end
-=end
 end

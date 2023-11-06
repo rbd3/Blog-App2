@@ -70,7 +70,7 @@ Example commands:
 
 ```sh
   cd my-folder
-  git clone https://github.com/rbd3/Blog-App.git
+  git clone https://github.com/rbd3/Blog-App2.git
 ```
 --->
 <!--
@@ -106,6 +106,11 @@ To run tests, run the following command:
 - GitHub: [@rbd3](https://github.com/rbd3)
 - LinkedIn: [@Andry Narson Rabedesana](https://linkedin.com/in/andry-rabedesana)
 
+👤 **Noel FOKA**
+
+- GitHub: [@noelfoka](https://github.com/noelfoka)
+- LinkedIn: [@noelfoka](https://linkedin.com/in/noelfoka)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
@@ -123,7 +128,7 @@ To run tests, run the following command:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/rbd3/Blog-App/issues).
+Feel free to check the [issues page](https://github.com/rbd3/Blog-App2/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

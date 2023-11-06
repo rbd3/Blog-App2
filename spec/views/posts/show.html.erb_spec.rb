@@ -17,6 +17,18 @@ RSpec.feature 'User Post Index Page' do
     expect(page).to have_content(user.name)
   end
 
+  scenario 'Displays part of the body' do
+    visit user_posts_path(user)
+
+    expect(page).to have_content('This is body for testing post')
+  end
+
+  scenario 'Displays title of the post correctly' do
+    visit user_posts_path(user)
+
+    expect(page).to have_content('This is post title')
+  end
+
   scenario 'Display right total comment and like' do
     visit user_post_path(user_id: post1.author_id, id: post1.id)
 

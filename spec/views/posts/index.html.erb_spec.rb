@@ -53,4 +53,17 @@ RSpec.feature 'User Post Index Page' do
     expect(page).to have_content('Post 1')
     expect(page).to have_content('Post 2')
   end
+
+  scenario 'Redirects to the post show page when a post is clicked' do
+    visit user_path(user)
+
+    click_link post2.title
+    expect(current_path).to eq(user_post_path(user_id: post2.author_id, id: post2.id))
+  end
+
+  scenario 'Displays pagination' do
+    visit user_posts_path(user)
+
+    expect(page).to have_css('.pagination')
+  end
 end

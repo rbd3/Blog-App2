@@ -24,13 +24,17 @@ RSpec.feature 'User Show Page', type: :feature do
     expect(page).to have_content('Post 4')
   end
 
-  scenario 'Redirecting to Post Show Page' do
-    visit user_path(user)
-
-    # Go back to the user's show page
+  scenario 'Redirecting to All post ' do
     visit user_path(user)
 
     click_link 'See All Posts'
     expect(current_path).to eq(user_posts_path(user))
+  end
+
+  scenario 'Redirects to the post show page when a post is clicked' do
+    visit user_path(user)
+
+    click_link post2.title
+    expect(current_path).to eq(user_post_path(user_id: post2.author_id, id: post2.id))
   end
 end

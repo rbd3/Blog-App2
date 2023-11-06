@@ -106,6 +106,11 @@ To run tests, run the following command:
 - GitHub: [@rbd3](https://github.com/rbd3)
 - LinkedIn: [@Andry Narson Rabedesana](https://linkedin.com/in/andry-rabedesana)
 
+👤 **Noel FOKA**
+
+- GitHub: [@noelfoka](https://github.com/noelfoka)
+- LinkedIn: [@noelfoka](https://linkedin.com/in/noelfoka)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->

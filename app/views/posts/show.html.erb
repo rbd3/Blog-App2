@@ -23,4 +23,10 @@
     <% end %>
   </div>
 
+  <div class="can-delete">
+    <% if can? :destroy, comment %>
+      <%= button_to 'Delete comment', user_post_comment_path(@post.author, @post, comment), method: :delete, class: 'delete-button'%>
+    <% end %>
+  </div>
+
 <%= render partial: 'comments/comment', locals: { post: @post, comment: Comment.new } %>

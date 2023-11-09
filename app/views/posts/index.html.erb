@@ -6,6 +6,9 @@
   <% if post.recent_comments.any? %>
     <% post.recent_comments.each do |comment| %>
       <p><%= comment.user.name %>: <%= comment.text %></p>
+      <% if can? :destroy, comment %>
+      <%= button_to 'Delete Post', user_post_path(@user, @post), method: :delete, class: 'delete-post'%>
+    <% end %>
     <% end %>
     <% else %>
         <div class="no-comment">No comment yet for this post</div>

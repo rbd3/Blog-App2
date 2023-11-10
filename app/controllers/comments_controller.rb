@@ -1,6 +1,6 @@
 class CommentsController < ApplicationController
   load_and_authorize_resource
-  
+
   def new
     @post = Post.includes(:comments).find(params[:post_id])
     @comment = @post.comments.new
@@ -17,6 +17,15 @@ class CommentsController < ApplicationController
       render :new
     end
   end
+
+  def destroy
+    @comment = Comment.find(params[:id])
+    @post = @comment.post
+    @post.decrement!(:comments_counter)
+    @comment.destroy
+    redirect_to user_post_path(current_user, @post), notice: 'Comment successfully deleted'
+  end
+
 
   def comment_params
     params.require(:comment).permit(:text)

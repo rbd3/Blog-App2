@@ -8,6 +8,7 @@ class User < ApplicationRecord
   has_many :likes, foreign_key: 'user_id'
 
   validates :name, presence: true
+  validates :role, inclusion: { in: %w[admin user], message: '%<value>s is not a valid role [admin, user]' }
   validates :posts_counter, numericality: { only_integer: true, greater_than_or_equal_to: 0 }
 
   def recent_posts

@@ -61,6 +61,7 @@ RSpec.feature 'User Post Index Page' do
     expect(current_path).to eq(user_post_path(user_id: post2.author_id, id: post2.id))
   end
 
+  #Pagination
   scenario 'Displays pagination' do
     visit user_posts_path(user)
 
